@@ -103,7 +103,94 @@ export default function Home() {
             </div>
           </main>
 
-          <footer className="p-6 text-center text-sm text-muted-foreground">
+          <section className="relative z-10 max-w-6xl mx-auto px-6 pb-16">
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 items-center">
+              <div className="space-y-6">
+                <h3 className="text-3xl xl:text-4xl font-bold text-foreground">
+                  Our Story
+                </h3>
+                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                  <p>
+                    AgriCraft was born from a simple observation: farmers across our communities had piles of agricultural waste with nowhere to go, while artisans and craftspeople were searching for authentic, sustainable materials to work with.
+                  </p>
+                  <p>
+                    We started small, connecting a handful of farmers with local buyers who appreciated handmade goods. What began as weekend market meetups has grown into a thriving community where creativity meets sustainability.
+                  </p>
+                  <p>
+                    Every basket woven from coconut shells, every decorative piece crafted from banana stems, and every eco-friendly product made from rice husks tells a story of transformation. These aren't just products – they're proof that what some call waste, others see as opportunity.
+                  </p>
+                </div>
+              </div>
+
+              <div className="space-y-6">
+                <h3 className="text-3xl xl:text-4xl font-bold text-foreground">
+                  Why It Matters
+                </h3>
+                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                  <p>
+                    Traditional farming generates tons of organic waste each season. Instead of burning it or letting it pile up, farmers can now turn these materials into income. A coconut shell that would have been discarded becomes a beautiful bowl. Banana stems transform into decorative art. Rice husks find new life as eco-friendly packaging.
+                  </p>
+                  <p>
+                    For buyers, each purchase supports a real farmer, reduces environmental waste, and brings home something truly unique. No mass production, no factories – just skilled hands creating one-of-a-kind pieces with care and attention.
+                  </p>
+                  <p>
+                    We believe in keeping things simple and genuine. That's why we connect you directly with the people who make these products. No middlemen, no complicated processes – just honest craftsmanship and fair prices.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-16 grid grid-cols-1 xl:grid-cols-3 gap-8">
+              <Card className="border-2">
+                <CardContent className="p-8 text-center space-y-4">
+                  <div className="text-4xl">🌾</div>
+                  <h4 className="text-xl font-bold text-foreground">For Farmers</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Turn your agricultural waste into extra income. We help you identify what you have and show you what you can make. Upload a photo, get guidance, and start selling.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2">
+                <CardContent className="p-8 text-center space-y-4">
+                  <div className="text-4xl">🛍️</div>
+                  <h4 className="text-xl font-bold text-foreground">For Buyers</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Discover handmade treasures that support sustainable living. Each purchase helps a farming family and reduces waste. Browse, connect, and buy directly from makers.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2">
+                <CardContent className="p-8 text-center space-y-4">
+                  <div className="text-4xl">🌍</div>
+                  <h4 className="text-xl font-bold text-foreground">For Our Planet</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Every product made from agricultural waste is one less pile burned or buried. Small actions add up to real environmental impact when we work together.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="mt-16 text-center space-y-6">
+              <h3 className="text-2xl xl:text-3xl font-bold text-foreground">
+                Join Our Growing Community
+              </h3>
+              <p className="text-muted-foreground max-w-3xl mx-auto">
+                Whether you're a farmer looking to add value to your waste materials, a buyer seeking authentic handmade products, or simply someone who cares about sustainable living – there's a place for you here. Let's build something meaningful together.
+              </p>
+              <div className="flex flex-col xl:flex-row gap-4 justify-center items-center pt-4">
+                <Button size="lg" onClick={() => navigate('/marketplace')}>
+                  Explore Products
+                </Button>
+                <Button size="lg" variant="outline" onClick={() => navigate('/feedback')}>
+                  Share Your Thoughts
+                </Button>
+              </div>
+            </div>
+          </section>
+
+          <footer className="relative z-10 p-6 text-center text-sm text-muted-foreground border-t border-border">
             <p>2025 AgriCraft</p>
           </footer>
         </div>
