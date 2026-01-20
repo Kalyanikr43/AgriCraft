@@ -1,8 +1,4 @@
-# Welcome to Your Miaoda Project
-Miaoda Application Link URL
-    URL:https://medo.dev/projects/app-7tqb6jyvh98h
-
-# Welcome to Your Miaoda Project
+# Welcome to AgriCraft Project
 
 ## Project Info
 
